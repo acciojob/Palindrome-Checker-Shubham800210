@@ -1,7 +1,7 @@
 // complete the given function
 
 function palindrome(str){
-	var len = str.trim().length;
+	var len = str.trim().toLowerCase().length;
    for(var i=0;i<len/2;i++){
 
 	   if(str[i] !== str[len - 1 - i]){
@@ -9,11 +9,11 @@ function palindrome(str){
 	   }
    }
 	return true;
+	
 	// let a=str.trim().toLowerCase().length;
 	
 	//  // const len = str.length;
 
-    
  //    for (let i = 0; i < a / 2; i++) {
 
        
