@@ -5,9 +5,22 @@ function palindrome(str){
    for(var i=0;i<len/2;i++){
 
 	   if(str[i] !== str[len - 1 - i]){
-		   return 'false';
+		   return false;
 	   }
    }
-	return 'true';
+	return true;
+	// let a=str.trim().toLowerCase().length;
+	
+	//  // const len = str.length;
+
+    
+ //    for (let i = 0; i < a / 2; i++) {
+
+       
+ //        if (str[i] !== str[a - 1 - i]) {
+ //            return true;
+ //        }
+ //    }
+ //    return false;
 }
 module.exports = palindrome
