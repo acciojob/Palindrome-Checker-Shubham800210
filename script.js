@@ -10,17 +10,17 @@ function palindrome(str){
  //   }
 	// return true;
 	
-	let a=str.trim().toLowerCase().length;
-	
-	 // const len = str.length;
-
-    for (let i = 0; i < a / 2; i++) {
-
-       
-        if (str[i] !== str[a - 1 - i]) {
-            return true;
-        }
-    }
-    return false;
+	str=str.toLowerCase();
+	for(let i=0 ; i<=str.length/2; i++)
+		{
+		let start= str.charAt(i);
+	let end = str.charAt(str.length-1-i);
+		
+			if(start!=end)
+			{
+				return false;
+			}
+		}
+	return true;
 }
 module.exports = palindrome
